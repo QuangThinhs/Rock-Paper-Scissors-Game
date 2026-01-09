@@ -1,4 +1,4 @@
-'''plaintext
+```plaintext
  Online Rock-Paper-Scissors (RPS) Multiplayer Engine
 Hệ thống trò chơi Kéo-Búa-Bao trực tuyến dựa trên lập trình Socket, hỗ trợ đa người chơi kết nối đồng thời, tích hợp xác thực tài khoản và lưu trữ dữ liệu tập trung.
 ________________________________________
