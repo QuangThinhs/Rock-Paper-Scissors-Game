@@ -14,6 +14,10 @@ class GameServer:
         self.waiting_room = []
         self.active_games = {}
         
+
+
+
+        
         # Khởi tạo database
         self.db_config = {
             'host': 'localhost',
