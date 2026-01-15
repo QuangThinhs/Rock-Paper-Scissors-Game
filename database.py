@@ -16,9 +16,9 @@ class DatabaseManager:
             )
             cursor = conn.cursor()
             cursor.execute("CREATE DATABASE IF NOT EXISTS rps_game")
+            cursor.execute("USE rps_game")
             cursor.close()
             conn.close()
-
             conn = mysql.connector.connect(**self.config)
             cursor = conn.cursor()
             
@@ -54,9 +54,9 @@ class DatabaseManager:
             conn.commit()
             cursor.close()
             conn.close()
-            print("✓ Database initialized successfully")
+            print(" Database initialized successfully")
         except Exception as e:
-            print(f"✗ Database error: {e}")
+            print(f" Database error: {e}")
 
     def hash_password(self, password):
         """Mã hóa mật khẩu"""
