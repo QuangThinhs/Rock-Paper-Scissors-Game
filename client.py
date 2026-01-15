@@ -19,6 +19,7 @@ class RockPaperScissorsClient:
             'success': '#2ecc71',
             'warning': '#f39c12',
             'bg': '#1a1a2e',
+
             'text': '#ffffff',
             'text_secondary': '#a0a0a0'
         }
@@ -59,6 +60,7 @@ class RockPaperScissorsClient:
         
         # Logo và tiêu đề
         title_frame = tk.Frame(main_frame, bg=self.colors['bg'])
+
         title_frame.pack(pady=(50, 30))
         
         emoji_label = tk.Label(title_frame, text="✊✋✌️", font=('Segoe UI', 60), bg=self.colors['bg'])
@@ -108,6 +110,7 @@ class RockPaperScissorsClient:
         emoji_label.pack()
         
         title = tk.Label(title_frame, text="TẠO TÀI KHOẢN", font=('Segoe UI', 28, 'bold'), 
+
                         fg=self.colors['accent'], bg=self.colors['bg'])
         title.pack(pady=(10, 5))
         
@@ -149,6 +152,7 @@ class RockPaperScissorsClient:
             return
         
         self.network.send_message({
+            
             'action': 'login',
             'username': username,
             'password': password
