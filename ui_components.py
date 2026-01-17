@@ -74,6 +74,10 @@ class UIComponents:
         tk.Label(card, text=str(value), font=('Segoe UI', 32, 'bold'), fg='white', bg=color).pack()
         tk.Label(card, text=label, font=('Segoe UI', 12), fg='white', bg=color).pack()
 
+
+
+
+
     def setup_styles(self, root):
         """Thiết lập style cho giao diện"""
         style = ttk.Style()
